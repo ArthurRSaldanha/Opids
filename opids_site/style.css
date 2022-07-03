@@ -264,6 +264,10 @@ nav.show div.icon-close{
     color: var(--text-color);
 }
 
+#about{
+    background: var(--background-2);
+}
+
 
 #about .container{
     margin: 0;
@@ -334,6 +338,10 @@ nav.show div.icon-close{
     color: var(--primary-color-color)
 }
 
+#contact{
+    background: var(--background-2);
+}
+
 #contact .container{
     margin: 0;
 }
@@ -370,7 +378,7 @@ footer .logo{
     margin-bottom: 1.5rem;
 }
   
-footer .brand p{
+footer .text p{
     color: var(--text-color);
     margin-bottom: 0.75rem;
 }
