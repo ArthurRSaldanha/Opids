@@ -282,7 +282,7 @@ nav.show div.icon-close{
 
     position: absolute;
     top: -20%;
-    left: -20%;
+    left: -30%;
 
 }
 
@@ -332,4 +332,60 @@ nav.show div.icon-close{
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
     color: var(--primary-color-color)
+}
+
+#contact .container{
+    margin: 0;
+}
+
+#contact .text{
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+#contact .text .subtitle{
+    margin-bottom: 2rem;
+}
+
+#contact ul li{
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+#contact ul li i{
+    margin-inline: 0.75rem;
+    font-size: 1.3rem;
+}
+
+footer{
+    background: var(--primary-color);
+}
+
+footer .container{
+    margin: 0;
+}
+  
+footer .logo{
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+  
+footer .brand p{
+    color: var(--text-color);
+    margin-bottom: 0.75rem;
+}
+  
+footer i{
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+  
+footer .social a{
+    margin-right: 2rem;
+    transition: 0.3s;
+    display: inline-block;
+}
+  
+footer .social a:hover{
+    transform: translateY(-8px);
 }
