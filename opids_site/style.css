@@ -310,10 +310,12 @@ nav.show div.icon-close{
 
 #services .container{
     margin: 0;
+
 }
 
 #services .text{
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 #services .card{
@@ -396,4 +398,130 @@ footer .social a{
   
 footer .social a:hover{
     transform: translateY(-8px);
+}
+
+@media screen and (min-width: 700px){
+    :root {
+        --title-font-size: 2.25rem;
+        --subtitle-font-size: 1.125rem;
+    }
+    
+    .container {
+        max-width: 900px;
+        margin-inline: auto;
+    }
+    
+    .section {
+        padding: 10rem 0;
+    }
+    
+    .button {
+        height: 3.125rem;
+    }
+    
+    /* navigation */
+    nav .menu {
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+
+    nav .menu ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+    nav .menu ul li a.title {
+        font: 400 1rem var(--body-font);
+        -webkit-font-smoothing: antialiased;
+    }
+
+    nav .icon-menu {
+        display: none;
+    }
+
+    /* layout */
+    main {
+        margin-top: var(--header-height);
+    }
+
+    /* home */
+    #home .container {
+        display: flex;
+    }
+
+    #home .image {
+        order: 1;
+    }
+
+    #home .text {
+        order: 0;
+        max-width: 24rem;
+        text-align: left;
+    }
+
+    /* about */
+    #about .container {
+        display: flex;
+        flex-direction: row;
+        margin-inline: 1.5rem;
+    }
+
+    #about .image {
+        order: 0;
+    }
+
+    #about .image::before{
+        display: none;
+    }
+
+    #about .text {
+        order: 1;
+        max-width: 24rem;
+        text-align: left;
+    }
+
+    /* services */
+
+    #services .text{
+        max-width: 24rem;
+        margin: 0 auto;
+    }
+
+    .cards {
+        display: flex;
+        margin-inline: 1.5rem;
+    }
+
+    .card {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    /* contact */
+    #contact .container {
+        display: flex;
+        justify-content: space-between;
+        margin-inline: 1.5rem;
+    }
+
+    #contact .text {
+        max-width: 25rem;
+    }
+
+    /* footer */
+    footer.section {
+        padding: 3.75rem 0;
+    }
+
+    footer .container {
+        display: flex;
+        justify-content: space-between;
+        margin-inline: 1.5rem;
+    }
+
+    footer .logo {
+        font-size: 2.25rem;
+    }
+    
 }
