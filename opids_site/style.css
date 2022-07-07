@@ -448,6 +448,8 @@ footer .social a:hover{
     /* home */
     #home .container {
         display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
     }
 
     #home .image {
@@ -463,8 +465,8 @@ footer .social a:hover{
     /* about */
     #about .container {
         display: flex;
-        flex-direction: row;
-        margin-inline: 1.5rem;
+        justify-content: space-between;
+        margin: 0 auto;
     }
 
     #about .image {
@@ -482,6 +484,13 @@ footer .social a:hover{
     }
 
     /* services */
+
+    #services .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
 
     #services .text{
         max-width: 24rem;
@@ -502,7 +511,7 @@ footer .social a:hover{
     #contact .container {
         display: flex;
         justify-content: space-between;
-        margin-inline: 1.5rem;
+        margin: 0 auto;
     }
 
     #contact .text {
@@ -517,7 +526,7 @@ footer .social a:hover{
     footer .container {
         display: flex;
         justify-content: space-between;
-        margin-inline: 1.5rem;
+        margin: 0 auto;
     }
 
     footer .logo {
