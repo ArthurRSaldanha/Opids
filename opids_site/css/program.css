@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+:root{
+    --hue: 159;
+    --title-color: hsl(271, 33%, 15%);
+    --primary-color: hsl(270, 83%, 63%);
+    --text-color: hsl(267, 22%, 70%);
+    --background-1: hsl(0, 0%, 98%);
+    --background-2: hsl(0, 0%, 100%);
+
+    --title-font-size: 1.875rem;
+    --subtitle-font-size: 1rem;
+    --body-font: 'DM Sans', sans-serif;
+    --logo-font: 'Pacifico', sans-serif;
+}
+body{
+    font: 400 1rem var(--body-font);
+}
+
+.title{
+    font-family: var(--body-font);
+    font-weight: 700;
+    font-size: var(--title-font-size);
+    color: var(--title-color);
+} 
+
+.section .title{
+    margin-bottom: 1.5rem
+}
+
+.section .subtitle{
+    color: var(--text-color);
+    font-size: var(--subtitle-font-size);
+}
+
+.section{
+    padding: 5rem;
+}
+
+
+.section p{
+    margin-bottom: 1.5rem;
+}
+
+.section img{
+    margin-bottom: 2rem;
+}
+
+.container{
+    margin-inline: 1.5rem;
+}
+
+.grid{
+    gap: 2rem;
+}
+
+.button {
+    background-color: var(--text-color);
+    color: var(--title-color);
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 2rem;
+    border-radius: 0.25rem;
+    transition: background 0.3s;
+}
+
+#home .container{
+    margin: 0;
+}
+
+.info-camp{
+    display: flex;
+    background: var(--primary-color);
+    border-radius: 0.25rem;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.info-camp ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-camp ul li{
+   text-align: center;
+}
+
+#about .container{
+    margin: 0;
+}
+
+#about ul li{
+    list-style: circle;
+}
+
+@media screen and (min-width: 1120px){
+    :root {
+        --title-font-size: 2.25rem;
+        --subtitle-font-size: 1.125rem;
+    }
+    
+    .container {
+        max-width: 1120px;
+        margin-inline: auto;
+    }
+    
+    .section {
+        padding: 10rem 0;
+    }
+    
+    .button {
+        height: 3.125rem;
+    }
+
+    #home .container{
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #home .image{
+        order: 0;
+    }
+
+    #home .button{
+        margin-bottom: 1rem;
+    }
+
+    #home .info{
+        flex-direction: row;
+    }
+
+    #about .container{
+        margin: auto;
+    }
+
+    #about .text{
+        order: 0;
+    }
+
+}
